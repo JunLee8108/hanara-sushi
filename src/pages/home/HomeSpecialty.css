@@ -4,8 +4,13 @@
   margin-bottom: 60px;
 }
 
+.home-specialty-title {
+  width: 70%;
+  box-sizing: border-box;
+}
+
 .home-specialty-img-container {
-  width: 100%;
+  width: 70%;
   height: 620px;
   position: relative;
   display: flex;
@@ -55,13 +60,35 @@
   opacity: 0;
   transition: 0.8s all ease;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.5px;
+  color: brown;
 }
 
 .active {
   opacity: 1;
 }
 
+@media screen and (max-width: 1280px) {
+  .home-specialty-title {
+    width: 80%;
+    box-sizing: border-box;
+  }
+
+  .home-specialty-name {
+    width: 100%;
+  }
+
+  .home-specialty-img-container {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .home-specialty-title {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   .home-specialty-img-container {
     width: 100%;
     height: 460px;
