@@ -1,0 +1,47 @@
+.home-location-container {
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.home-location-flex-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+}
+
+.home-location-hour-flex-container {
+  width: 90%;
+}
+
+.home-location-flexbox {
+  width: 50%;
+  padding: 15px;
+}
+
+.home-location-flexbox h3 {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.home-location-review-box {
+  padding: 15px;
+}
+
+.home-location-review {
+  width: 90%;
+  padding-left: 15px;
+  border-left: 2px solid #252525;
+  line-height: 30px;
+}
+
+.home-location-review-writer {
+  color: grey;
+}
+
+@media screen and (max-width: 767px) {
+  .home-location-hour-flex-container {
+    flex-wrap: wrap;
+  }
+
+  .home-location-flexbox {
+    width: 100%;
+  }
+}

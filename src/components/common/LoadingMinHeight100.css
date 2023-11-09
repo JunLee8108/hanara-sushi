@@ -1,0 +1,5 @@
+.loading-height-container {
+  width: 100%;
+  min-height: calc(100vh - 5rem);
+  z-index: 5;
+}
