@@ -2,6 +2,7 @@ import "./Home.css";
 import HomeIntro from "./HomeIntro";
 import HomeLocation from "./HomeLocation";
 import HomePromotion from "./HomePromotion";
+import HomeSpecialty from "./HomeSpecialty";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <HomeIntro />
       <HomeLocation />
       <HomePromotion />
+      <HomeSpecialty />
     </div>
   );
 }
