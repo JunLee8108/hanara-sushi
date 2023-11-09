@@ -28,7 +28,6 @@
 
 .home-promotion-textbox-title {
   width: 70%;
-  /* margin-bottom: 0; */
   text-align: center;
   color: #ff6f61;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
@@ -71,6 +70,10 @@
   .home-promotion-textbox,
   .home-promotion-imgbox {
     width: 100%;
+  }
+
+  .home-promotion-textbox {
+    margin-bottom: 40px;
   }
 
   .home-promotion-textbox-title {
