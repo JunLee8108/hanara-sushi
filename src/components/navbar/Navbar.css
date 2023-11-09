@@ -43,3 +43,16 @@
 .navbar-title:hover {
   color: #f57c00;
 }
+
+@media screen and (max-width: 1280px) {
+  /* TODO */
+  .navbar-title-box {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .navbar-menu-box {
+    display: none;
+  }
+}
