@@ -34,9 +34,6 @@ ul {
   margin-right: auto;
 }
 
-.container {
-}
-
 @keyframes flash {
   to {
     opacity: 1;

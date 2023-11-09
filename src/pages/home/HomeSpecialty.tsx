@@ -12,11 +12,13 @@ export default function HomeSpecialty() {
     {
       id: 0,
       name: "Baked Salmon Roll",
+      content: "Crab, avocado, and salmon on top",
       img: bakedRoll,
     },
     {
       id: 1,
       name: "Hallelujah Roll",
+      content: "Spicy tuna, cucumber, avocado, and salmon on top",
       img: HallelujahRoll,
     },
   ];
@@ -73,6 +75,21 @@ export default function HomeSpecialty() {
             </h2>
           );
         })}
+
+        {specialtyData.map((text, index) => {
+          return (
+            <p
+              className={`home-specialty-content ${
+                index === currentImage ? "active" : ""
+              }`}
+              key={index}
+            >
+              {text.content}
+            </p>
+          );
+        })}
+
+        {/* <p className="home-specialty-content">asdasd</p> */}
       </div>
     </div>
   );
