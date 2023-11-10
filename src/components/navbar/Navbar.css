@@ -1,3 +1,7 @@
+.navbar-menu-box-mobile {
+  display: none;
+}
+
 .navbar-bg {
   width: 100%;
   background-color: #252525;
@@ -47,9 +51,28 @@
 @media screen and (max-width: 1280px) {
   /* TODO */
   .navbar-title-box {
-    width: 100%;
+    width: 50%;
     justify-content: flex-start;
     align-items: center;
+  }
+
+  .navbar-menu-box-mobile {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5px;
+  }
+
+  .navbar-menu-bar {
+    padding: 12px;
+    border: none;
+    color: white;
+    background-color: transparent;
+  }
+
+  .navbar-title {
+    font-size: 16px;
   }
 
   .navbar-menu-box {

@@ -1,8 +1,6 @@
 import "./HomeLocation.css";
 import "./Home.css";
 
-const logo = require("../../assets/bg.webp");
-
 export default function HomeLocation() {
   return (
     <div className="home-location-container home-common-container mg-left-right-auto ">

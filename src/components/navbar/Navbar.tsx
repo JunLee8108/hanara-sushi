@@ -1,8 +1,16 @@
 import "./Navbar.css";
+import NavbarMobileMenuModal from "./NavbarMobileMenuModal";
+
+import { useState } from "react";
 
 import { useNavigate, useLocation } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faRectangleXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
+  const [openMobileModal, setOpenMobileModal] = useState(false);
+
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -25,15 +33,38 @@ export default function Navbar() {
     }
   };
 
+  const handleMobileMenuBar = () => {
+    setOpenMobileModal((openMobileModal) => !openMobileModal);
+  };
+
   return (
     <>
       <div className="navbar-bg">
         <div className="navbar-container display-flex mg-left-right-auto">
           <div className="navbar-title-box display-flex">
-            <h3 className="navbar-title" onClick={() => navigate("/")}>
+            <h3
+              className="navbar-title"
+              onClick={() => {
+                navigate("/");
+                const BrowserWidth = document.body.scrollWidth;
+                if (BrowserWidth <= 1280) {
+                  handleMobileMenuBar();
+                }
+              }}
+            >
               Hanara Sushi
             </h3>
           </div>
+
+          <ul className="navbar-menu-box-mobile">
+            <button className="navbar-menu-bar" onClick={handleMobileMenuBar}>
+              {openMobileModal ? (
+                <FontAwesomeIcon icon={faRectangleXmark} size="xl" />
+              ) : (
+                <FontAwesomeIcon icon={faBars} size="xl" />
+              )}
+            </button>
+          </ul>
 
           <ul className="navbar-menu-box display-flex">
             <li className="navbar-menu" onClick={() => handleNavigation("/")}>
@@ -84,6 +115,13 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
+
+      {openMobileModal ? (
+        <NavbarMobileMenuModal
+          setOpenMobileModal={setOpenMobileModal}
+          handleNavigation={handleNavigation}
+        />
+      ) : null}
     </>
   );
 }

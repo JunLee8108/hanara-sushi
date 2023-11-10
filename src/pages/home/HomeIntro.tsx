@@ -1,9 +1,13 @@
 import "./HomeIntro.css";
 import "./Home.css";
 
+import { useNavigate } from "react-router-dom";
+
 const logo = require("../../assets/bg.webp");
 
 export default function HomeIntro() {
+  const navigate = useNavigate();
+
   return (
     <div className="home-intro-flex-container home-common-container mg-left-right-auto ">
       <div className="home-intro-flexbox">
@@ -17,7 +21,12 @@ export default function HomeIntro() {
           of Japanese cuisine at its finest.
         </p>
         <div>
-          <button className="home-intro-order-button">SEE THE MENU</button>
+          <button
+            className="home-intro-order-button"
+            onClick={() => navigate("/menu")}
+          >
+            SEE THE MENU
+          </button>
         </div>
       </div>
       <div className="home-intro-flexbox">
