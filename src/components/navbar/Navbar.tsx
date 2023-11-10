@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import NavbarMobileMenuModal from "./NavbarMobileMenuModal";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { useNavigate, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -37,6 +37,20 @@ export default function Navbar() {
     setOpenMobileModal((openMobileModal) => !openMobileModal);
   };
 
+  const handleScroll = () => {
+    setOpenMobileModal(false);
+  };
+
+  useEffect(() => {
+    if (window.innerWidth <= 768) {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <div className="navbar-bg">
@@ -48,7 +62,7 @@ export default function Navbar() {
                 navigate("/");
                 const BrowserWidth = document.body.scrollWidth;
                 if (BrowserWidth <= 1280) {
-                  handleMobileMenuBar();
+                  setOpenMobileModal(false);
                 }
               }}
             >
