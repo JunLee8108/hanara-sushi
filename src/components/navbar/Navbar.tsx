@@ -5,11 +5,11 @@ import { useState, useEffect } from "react";
 
 import { useNavigate, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faRectangleXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faRectangleXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   const [openMobileModal, setOpenMobileModal] = useState(false);
+  const [handleMobileModal, setHandleMobileModal] = useState(false);
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -34,11 +34,11 @@ export default function Navbar() {
   };
 
   const handleMobileMenuBar = () => {
-    setOpenMobileModal((openMobileModal) => !openMobileModal);
+    setHandleMobileModal((openMobileModal) => !openMobileModal);
   };
 
   const handleScroll = () => {
-    setOpenMobileModal(false);
+    setHandleMobileModal(false);
   };
 
   useEffect(() => {
@@ -51,6 +51,21 @@ export default function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+    let timer: ReturnType<typeof setTimeout>;
+    if (handleMobileModal) {
+      setOpenMobileModal(true);
+    } else if (!handleMobileModal) {
+      timer = setTimeout(() => {
+        setOpenMobileModal(false);
+      }, 300);
+    }
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [handleMobileModal]);
+
   return (
     <>
       <div className="navbar-bg">
@@ -62,7 +77,7 @@ export default function Navbar() {
                 navigate("/");
                 const BrowserWidth = document.body.scrollWidth;
                 if (BrowserWidth <= 1280) {
-                  setOpenMobileModal(false);
+                  setHandleMobileModal(false);
                 }
               }}
             >
@@ -72,7 +87,7 @@ export default function Navbar() {
 
           <ul className="navbar-menu-box-mobile">
             <button className="navbar-menu-bar" onClick={handleMobileMenuBar}>
-              {openMobileModal ? (
+              {handleMobileModal ? (
                 <FontAwesomeIcon icon={faRectangleXmark} size="xl" />
               ) : (
                 <FontAwesomeIcon icon={faBars} size="xl" />
@@ -120,19 +135,14 @@ export default function Navbar() {
             >
               Directions
             </li>
-            {/* <li
-              className="navbar-menu"
-              onClick={() => handleNavigation("/contact")}
-            >
-              Contact
-            </li> */}
           </ul>
         </div>
       </div>
 
       {openMobileModal ? (
         <NavbarMobileMenuModal
-          setOpenMobileModal={setOpenMobileModal}
+          handleMobileModal={handleMobileModal}
+          setHandleMobileModal={setHandleMobileModal}
           handleNavigation={handleNavigation}
         />
       ) : null}

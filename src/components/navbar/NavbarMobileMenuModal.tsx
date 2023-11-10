@@ -5,10 +5,12 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 export default function NavbarMobileMenuModal({
   handleNavigation,
-  setOpenMobileModal,
+  setHandleMobileModal,
+  handleMobileModal,
 }: {
-  setOpenMobileModal: React.Dispatch<React.SetStateAction<boolean>>;
+  setHandleMobileModal: React.Dispatch<React.SetStateAction<boolean>>;
   handleNavigation: (link: string) => void;
+  handleMobileModal: boolean;
 }) {
   const openExternalLink = (link: string) => {
     window.location.href = link;
@@ -16,8 +18,20 @@ export default function NavbarMobileMenuModal({
 
   return (
     <>
-      <div className="navbar-mobile-modal-bg">
-        <div className="navbar-mobile-modal-container">
+      <div
+        className={
+          handleMobileModal
+            ? "navbar-mobile-modal-bg animated-bg"
+            : "navbar-mobile-modal-bg animated-hide"
+        }
+      >
+        <div
+          className={
+            handleMobileModal
+              ? "navbar-mobile-modal-container animated"
+              : "navbar-mobile-modal-container animated-hide"
+          }
+        >
           <div className="navbar-mobile-border-line mg-left-right-auto"></div>
 
           <ul className="navbar-mobile-menu-container display-flex">
@@ -25,7 +39,7 @@ export default function NavbarMobileMenuModal({
               className="navbar-mobile-menu"
               onClick={() => {
                 handleNavigation("/");
-                setOpenMobileModal(false);
+                setHandleMobileModal(false);
               }}
             >
               <FontAwesomeIcon
@@ -39,7 +53,7 @@ export default function NavbarMobileMenuModal({
               className="navbar-mobile-menu"
               onClick={() => {
                 handleNavigation("/menu");
-                setOpenMobileModal(false);
+                setHandleMobileModal(false);
               }}
             >
               <FontAwesomeIcon
