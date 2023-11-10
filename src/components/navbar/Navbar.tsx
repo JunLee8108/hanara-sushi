@@ -105,25 +105,30 @@ export default function Navbar() {
             >
               Menu
             </li>
-            <li
-              className="navbar-menu"
-              onClick={() =>
-                openInNewTab(
-                  "https://www.doordash.com/store/hanara-sushi-&-grill-austin-538103/"
-                )
-              }
-            >
-              DoorDash
-            </li>
-            <li
-              className="navbar-menu"
-              onClick={() =>
-                openInNewTab(
-                  "https://www.ubereats.com/store/hanara-sushi-%26-grill/L6M5__3yT8Wb6ehcNqgq4Q"
-                )
-              }
-            >
-              UberEats
+            <li className="navbar-menu">
+              Order
+              <ul className="navbar-submenu">
+                <li
+                  className="navbar-submenu-list"
+                  onClick={() =>
+                    openInNewTab(
+                      "https://www.doordash.com/store/hanara-sushi-&-grill-austin-538103/"
+                    )
+                  }
+                >
+                  DoorDash
+                </li>
+                <li
+                  className="navbar-submenu-list"
+                  onClick={() =>
+                    openInNewTab(
+                      "https://www.ubereats.com/store/hanara-sushi-%26-grill/L6M5__3yT8Wb6ehcNqgq4Q"
+                    )
+                  }
+                >
+                  Uber Eats
+                </li>
+              </ul>
             </li>
             <li
               className="navbar-menu"

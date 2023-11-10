@@ -28,7 +28,7 @@ const menuList = [
           },
           {
             id: 3,
-            menuName: "Twol Roll Combo",
+            menuName: "Two Roll Combo",
             menuDescription: "King of king roll, and an Austin roll",
             menuPrice: "$26.99",
           },
@@ -395,6 +395,243 @@ const menuList = [
             menuName: "Crunch Roll",
             menuDescription: "Shrimp tempura, cucumber, and crunch on top",
             menuPrice: "$12.99",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "KITCHEN MENU",
+    menuSubtitle: [
+      {
+        subtitle: "Salads & Teriyaki",
+        menuName: [
+          {
+            id: 0,
+            menuName: "Garden Salad",
+            menuDescription: "",
+            menuPrice: "$5.99",
+          },
+          {
+            id: 1,
+            menuName: "Seaweed Salad",
+            menuDescription: "",
+            menuPrice: "$5.99",
+          },
+          {
+            id: 2,
+            menuName: "Chicken Teriyaki",
+            menuDescription: "",
+            menuPrice: "$9.99",
+          },
+          {
+            id: 3,
+            menuName: "Beef Teriyaki",
+            menuDescription: "",
+            menuPrice: "$9.99",
+          },
+          {
+            id: 4,
+            menuName: "Bulgogi",
+            menuDescription: "",
+            menuPrice: "$9.99",
+          },
+          {
+            id: 5,
+            menuName: "Tofu Teriyaki",
+            menuDescription: "",
+            menuPrice: "$11.99",
+          },
+          {
+            id: 6,
+            menuName: "Salmon Teriyaki",
+            menuDescription: "",
+            menuPrice: "$13.99",
+          },
+        ],
+      },
+      {
+        subtitle: "Bowls",
+        menuName: [
+          {
+            id: 0,
+            menuName: "Chicken",
+            menuDescription: "Chicken on a bed of rice with steamed vegetables",
+            menuPrice: "$9.99",
+          },
+          {
+            id: 1,
+            menuName: "Beef",
+            menuDescription: "Beef on a bed of rice with steamed vegetables",
+            menuPrice: "$9.99",
+          },
+          {
+            id: 2,
+            menuName: "Tofu",
+            menuDescription: "Tofu on a bed of rice with steamed vegetables",
+            menuPrice: "$11.99",
+          },
+          {
+            id: 3,
+            menuName: "Combo",
+            menuDescription:
+              "Beef & chicken on a bed of rice with steamed vegetables",
+            menuPrice: "$10.99",
+          },
+          {
+            id: 4,
+            menuName: "Salmon",
+            menuDescription: "Salmon on a bed of rice with steamed vegetables",
+            menuPrice: "$13.99",
+          },
+          {
+            id: 5,
+            menuName: "Bulgogi",
+            menuDescription:
+              "Korean marinated and grilled beef on a bed of rice with steamed vegetables",
+            menuPrice: "$9.99",
+          },
+          {
+            id: 6,
+            menuName: "Unagi",
+            menuDescription:
+              "Grilled freshwater eel on a bed of rice with steamed vegetables",
+            menuPrice: "$15.99",
+          },
+        ],
+      },
+      {
+        subtitle: "Bento",
+        menuName: [
+          {
+            id: 0,
+            menuName: "Chicken",
+            menuDescription:
+              "Chicken served with tempura, salad, gyoza, California rolls (2pcs), and rice",
+            menuPrice: "$12.99",
+          },
+          {
+            id: 1,
+            menuName: "Beef",
+            menuDescription:
+              "Beef served with tempura, salad, gyoza, California rolls (2pcs), and rice",
+            menuPrice: "$12.99",
+          },
+          {
+            id: 2,
+            menuName: "Bulgogi",
+            menuDescription:
+              "Korean marinated and grilled beef served with tempura, salad, gyoza, California rolls (2pcs), and rice",
+            menuPrice: "$12.99",
+          },
+          {
+            id: 3,
+            menuName: "Tofu",
+            menuDescription:
+              "Tofu served with tempura, salad, gyoza, California rolls (2pcs), and rice",
+            menuPrice: "$14.99",
+          },
+          {
+            id: 4,
+            menuName: "Combo",
+            menuDescription:
+              "Beef & Chicken served with tempura, salad, gyoza, California rolls (2pcs), and rice",
+            menuPrice: "$13.99",
+          },
+          {
+            id: 5,
+            menuName: "Salmon",
+            menuDescription:
+              "Salmon served with tempura, salad, gyoza, California rolls (2pcs), and rice",
+            menuPrice: "$15.99",
+          },
+          {
+            id: 6,
+            menuName: "Unagi",
+            menuDescription:
+              "Grilled freshwater eel served with tempura, salad, gyoza, California rolls (2pcs), and rice",
+            menuPrice: "$18.99",
+          },
+          {
+            id: 7,
+            menuName: "Tonkatsu",
+            menuDescription:
+              "Rice breaded pork cutlet served with miso soup, California roll (2pcs), cabbage salad, and rice",
+            menuPrice: "$13.99",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "SIDES",
+    menuSubtitle: [
+      {
+        subtitle: "Sushi Combos",
+        menuName: [
+          {
+            id: 0,
+            menuName: "Sushi Combo A",
+            menuDescription:
+              "5 pieces of nigiri sushi (chef's choice) with a California roll",
+            menuPrice: "$19.99",
+          },
+          {
+            id: 1,
+            menuName: "Sushi Combo B",
+            menuDescription:
+              "5 pieces of nigiri sushi (chef's choice) with a spicy tuna roll",
+            menuPrice: "$21.99",
+          },
+          {
+            id: 2,
+            menuName: "Sushi Combo C",
+            menuDescription:
+              "5 pieces of nigiri sushi (chef's choice) with either an American roll or a Hawaiian roll or a rainbow roll",
+            menuPrice: "$23.99",
+          },
+          {
+            id: 3,
+            menuName: "Twol Roll Combo",
+            menuDescription: "King of king roll, and an Austin roll",
+            menuPrice: "$26.99",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "DRINKS",
+    menuSubtitle: [
+      {
+        subtitle: "Sushi Combos",
+        menuName: [
+          {
+            id: 0,
+            menuName: "Sushi Combo A",
+            menuDescription:
+              "5 pieces of nigiri sushi (chef's choice) with a California roll",
+            menuPrice: "$19.99",
+          },
+          {
+            id: 1,
+            menuName: "Sushi Combo B",
+            menuDescription:
+              "5 pieces of nigiri sushi (chef's choice) with a spicy tuna roll",
+            menuPrice: "$21.99",
+          },
+          {
+            id: 2,
+            menuName: "Sushi Combo C",
+            menuDescription:
+              "5 pieces of nigiri sushi (chef's choice) with either an American roll or a Hawaiian roll or a rainbow roll",
+            menuPrice: "$23.99",
+          },
+          {
+            id: 3,
+            menuName: "Twol Roll Combo",
+            menuDescription: "King of king roll, and an Austin roll",
+            menuPrice: "$26.99",
           },
         ],
       },

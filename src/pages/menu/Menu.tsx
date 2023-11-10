@@ -5,8 +5,12 @@ import { menuList } from "../../components/util/sushiMenuData";
 import { Fragment } from "react";
 import { useState } from "react";
 
+const filteredSushiList = menuList.filter((data) =>
+  data.id.replaceAll(" ", "").includes("SUSHI")
+);
+
 export default function Menu() {
-  const [menuChoice, setMenuChoice] = useState(menuList);
+  const [menuChoice, setMenuChoice] = useState(filteredSushiList);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleChocie = (e: React.MouseEvent) => {

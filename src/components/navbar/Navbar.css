@@ -40,7 +40,51 @@
   list-style-type: none;
   font-size: 13px;
   transition: 0.3s all ease;
+  padding: 15px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   cursor: pointer;
+  position: relative;
+}
+
+.navbar-submenu {
+  position: absolute;
+  left: -40px;
+  top: 52px;
+  opacity: 0;
+  background-color: #252525;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
+  visibility: hidden;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.navbar-submenu-list {
+  list-style-type: none;
+  padding: 15px 20px 20px 20px;
+  width: 100%;
+  z-index: 999;
+  text-align: left;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar-submenu .navbar-submenu-list:hover {
+  color: #f57c00;
+}
+
+.navbar-menu:hover .navbar-submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .navbar-menu:hover,
