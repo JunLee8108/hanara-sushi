@@ -1,0 +1,15 @@
+.contact-container {
+  width: 100%;
+  max-width: 1200px;
+  min-height: calc(100vh - 5rem);
+  opacity: 0;
+  animation: flash 0.7s 0.2s forwards;
+}
+
+.contact-title-border-left {
+  /* border-left: 4px solid #f57c00; */
+  border-left: 4px solid grey;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

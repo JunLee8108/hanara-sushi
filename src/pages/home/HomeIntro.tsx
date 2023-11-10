@@ -17,7 +17,7 @@ export default function HomeIntro() {
           of Japanese cuisine at its finest.
         </p>
         <div>
-          <button className="home-intro-order-button">ORDER</button>
+          <button className="home-intro-order-button">SEE THE MENU</button>
         </div>
       </div>
       <div className="home-intro-flexbox">

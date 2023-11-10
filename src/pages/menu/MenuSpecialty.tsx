@@ -1,11 +1,13 @@
-import React, { useState } from "react";
-import "./HomeSpecialty.css";
-import "./Home.css";
+import "./Menu.css";
+import "./MenuSpecialty.css";
+
+import { useState } from "react";
 
 const bakedRoll = require("../../assets/Baked-Salmon-Roll.webp");
 const HallelujahRoll = require("../../assets/Hallelujah-Roll.webp");
+const RainbowRoll = require("../../assets/Rainbow-Roll.webp");
 
-export default function HomeSpecialty() {
+export default function MenuSpecialty() {
   const [currentImage, setCurrentImage] = useState(0);
 
   const specialtyData = [
@@ -20,6 +22,12 @@ export default function HomeSpecialty() {
       name: "Hallelujah Roll",
       content: "Spicy tuna, cucumber, avocado, and salmon on top",
       img: HallelujahRoll,
+    },
+    {
+      id: 1,
+      name: "Rainbow Roll",
+      content: "Spicy tuna, cucumber, avocado, and salmon on top",
+      img: RainbowRoll,
     },
   ];
 
@@ -36,12 +44,12 @@ export default function HomeSpecialty() {
   };
 
   return (
-    <div className="home-specialty-container home-common-container mg-left-right-auto">
-      <h1 className="home-specialty-title home-title-border-left mg-left-right-auto">
+    <div className="menu-specialty-container mg-left-right-auto">
+      <h1 className="menu-specialty-title menu-title-border-left mg-left-right-auto">
         Our Specialty Rolls
       </h1>
 
-      <div className="home-specialty-img-container mg-left-right-auto">
+      <div className="menu-specialty-img-container mg-left-right-auto">
         {specialtyData.map((src, index) => {
           return (
             <img
@@ -49,7 +57,7 @@ export default function HomeSpecialty() {
               loading="lazy"
               src={src.img}
               alt="Specialty Roll"
-              className={`home-specailty-img ${
+              className={`menu-specailty-img ${
                 index === currentImage ? "active" : ""
               }`}
             />
@@ -66,7 +74,7 @@ export default function HomeSpecialty() {
         {specialtyData.map((text, index) => {
           return (
             <h2
-              className={`home-specialty-name ${
+              className={`menu-specialty-name ${
                 index === currentImage ? "active" : ""
               }`}
               key={index}
@@ -79,7 +87,7 @@ export default function HomeSpecialty() {
         {specialtyData.map((text, index) => {
           return (
             <p
-              className={`home-specialty-content ${
+              className={`menu-specialty-content ${
                 index === currentImage ? "active" : ""
               }`}
               key={index}
@@ -88,8 +96,6 @@ export default function HomeSpecialty() {
             </p>
           );
         })}
-
-        {/* <p className="home-specialty-content">asdasd</p> */}
       </div>
     </div>
   );
