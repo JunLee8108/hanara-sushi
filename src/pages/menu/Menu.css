@@ -47,6 +47,10 @@
 
 .menu-button-container {
   gap: 20px;
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: white;
 }
 
 .menu-button {
@@ -150,6 +154,9 @@
 
   .menu-button {
     font-size: 11px;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .menu-item-name {
     font-size: 14px;

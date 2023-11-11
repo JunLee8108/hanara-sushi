@@ -561,40 +561,232 @@ const menuList = [
           },
         ],
       },
+      {
+        subtitle: "Udon",
+        menuName: [
+          {
+            id: 0,
+            menuName: "Veggies Only",
+            menuDescription: "Thick and soft noodles in a vegetable broth",
+            menuPrice: "$9.99",
+          },
+          {
+            id: 1,
+            menuName: "Chicken",
+            menuDescription:
+              "Chicken with thick and soft noodles in a vegetable broth",
+            menuPrice: "$10.99",
+          },
+          {
+            id: 2,
+            menuName: "Beef",
+            menuDescription:
+              "Beef with thick and soft noodles in a vegetable broth",
+            menuPrice: "$10.99",
+          },
+          {
+            id: 3,
+            menuName: "Shrimp Tempura",
+            menuDescription:
+              "Shrimp Tempura with thick and soft noodles in a vegetable broth",
+            menuPrice: "$10.99",
+          },
+          {
+            id: 4,
+            menuName: "Seafood",
+            menuDescription:
+              "Seafood with thick and soft noodles in a vegetable broth",
+            menuPrice: "$11.99",
+          },
+          {
+            id: 5,
+            menuName: "Tofu",
+            menuDescription:
+              "Tofu with thick and soft noodles in a vegetable broth",
+            menuPrice: "$12.99",
+          },
+          {
+            id: 6,
+            menuName: "Tonkatsu",
+            menuDescription:
+              "Fried pork cutlet with thick and soft noodles in a vegetable broth",
+            menuPrice: "$12.99",
+          },
+        ],
+      },
+      {
+        subtitle: "Yakisoba",
+        menuName: [
+          {
+            id: 0,
+            menuName: "Veggies Only",
+            menuDescription:
+              "Stir fried noodle and vegetables (Carrots, onion, green cabbage, broccoli)",
+            menuPrice: "$12.99",
+          },
+          {
+            id: 1,
+            menuName: "Chicken",
+            menuDescription: "Chicken with stir fried noodle and vegetables",
+            menuPrice: "$13.99",
+          },
+          {
+            id: 2,
+            menuName: "Beef",
+            menuDescription: "Beef with stir fried noodle and vegetables",
+            menuPrice: "$13.99",
+          },
+          {
+            id: 3,
+            menuName: "Combo",
+            menuDescription:
+              "Chicken and beef with stir fried noodle and vegetables",
+            menuPrice: "$14.99",
+          },
+          {
+            id: 4,
+            menuName: "Tofu",
+            menuDescription: "Tofu with stir fried noodle and vegetables",
+            menuPrice: "$16.99",
+          },
+          {
+            id: 5,
+            menuName: "Shrimp",
+            menuDescription: "Shrimp with stir fried noodle and vegetables",
+            menuPrice: "$16.99",
+          },
+        ],
+      },
+      {
+        subtitle: "Ramen Noodles",
+        menuName: [
+          {
+            id: 0,
+            menuName: "Veggies Only Ramen",
+            menuDescription: "Noodles in Spicy Broth with veggies",
+            menuPrice: "$9.99",
+          },
+          {
+            id: 1,
+            menuName: "Chicken Ramen",
+            menuDescription: "Chicken with noodles in Spicy Broth with veggies",
+            menuPrice: "$10.99",
+          },
+          {
+            id: 2,
+            menuName: "Beef Ramen",
+            menuDescription: "Beef with noodles in Spicy Broth with veggies",
+            menuPrice: "$10.99",
+          },
+          {
+            id: 3,
+            menuName: "Combo (Chicken & Beef) Ramen",
+            menuDescription:
+              "Chicken and beef with noodles in Spicy Broth with veggies",
+            menuPrice: "$10.99",
+          },
+          {
+            id: 4,
+            menuName: "Shrimp Tempura Ramen",
+            menuDescription:
+              "Shrimp tempura with noodles in Spicy Broth with veggies",
+            menuPrice: "$10.99",
+          },
+          {
+            id: 5,
+            menuName: "Seafood Ramen",
+            menuDescription: "Seafood with noodles in Spicy Broth with veggies",
+            menuPrice: "$11.99",
+          },
+          {
+            id: 6,
+            menuName: "Tofu Ramen",
+            menuDescription: "Tofu with noodles in Spicy Broth with veggies",
+            menuPrice: "$12.99",
+          },
+          {
+            id: 7,
+            menuName: "Tonkatsu (Fried Pork Cutlet on the side) Ramen",
+            menuDescription:
+              "Tonkatsu with noodles in Spicy Broth with veggies",
+            menuPrice: "$12.99",
+          },
+          {
+            id: 8,
+            menuName: "Gyoza (Fried Dumplings) Ramen",
+            menuDescription: "Gyoza with noodles in Spicy Broth with veggies",
+            menuPrice: "$13.99",
+          },
+          {
+            id: 9,
+            menuName: "Spider (Soft Shell Crab) Ramen",
+            menuDescription:
+              "Soft Shell Crab with stir fried noodle and vegetables",
+            menuPrice: "$16.99",
+          },
+        ],
+      },
     ],
   },
   {
     id: "SIDES",
     menuSubtitle: [
       {
-        subtitle: "Sushi Combos",
+        subtitle: "Sides",
         menuName: [
           {
             id: 0,
-            menuName: "Sushi Combo A",
-            menuDescription:
-              "5 pieces of nigiri sushi (chef's choice) with a California roll",
-            menuPrice: "$19.99",
+            menuName: "Bowl of White Rice",
+            menuDescription: "",
+            menuPrice: "$2.00",
           },
           {
             id: 1,
-            menuName: "Sushi Combo B",
-            menuDescription:
-              "5 pieces of nigiri sushi (chef's choice) with a spicy tuna roll",
-            menuPrice: "$21.99",
+            menuName: "Bowl of Brown Rice",
+            menuDescription: "",
+            menuPrice: "$3.00",
           },
           {
             id: 2,
-            menuName: "Sushi Combo C",
-            menuDescription:
-              "5 pieces of nigiri sushi (chef's choice) with either an American roll or a Hawaiian roll or a rainbow roll",
-            menuPrice: "$23.99",
+            menuName: "Hot Green Tea",
+            menuDescription: "",
+            menuPrice: "$3.00",
           },
           {
             id: 3,
-            menuName: "Twol Roll Combo",
-            menuDescription: "King of king roll, and an Austin roll",
-            menuPrice: "$26.99",
+            menuName: "Miso Soup",
+            menuDescription: "",
+            menuPrice: "$3.00",
+          },
+          {
+            id: 4,
+            menuName: "Edamame",
+            menuDescription: "",
+            menuPrice: "$5.00",
+          },
+          {
+            id: 5,
+            menuName: "Gyoza",
+            menuDescription: "",
+            menuPrice: "$5.99",
+          },
+          {
+            id: 6,
+            menuName: "Seaweed Salad",
+            menuDescription: "",
+            menuPrice: "$5.99",
+          },
+          {
+            id: 7,
+            menuName: "Tempura",
+            menuDescription: "",
+            menuPrice: "$8.99",
+          },
+          {
+            id: 8,
+            menuName: "Shrimp only Tempura",
+            menuDescription: "",
+            menuPrice: "$8.99",
           },
         ],
       },
@@ -604,34 +796,121 @@ const menuList = [
     id: "DRINKS",
     menuSubtitle: [
       {
-        subtitle: "Sushi Combos",
+        subtitle: "Drinks",
         menuName: [
           {
             id: 0,
-            menuName: "Sushi Combo A",
-            menuDescription:
-              "5 pieces of nigiri sushi (chef's choice) with a California roll",
-            menuPrice: "$19.99",
+            menuName: "Blueberry Bai",
+            menuDescription: "",
+            menuPrice: "$3.00",
           },
           {
             id: 1,
-            menuName: "Sushi Combo B",
-            menuDescription:
-              "5 pieces of nigiri sushi (chef's choice) with a spicy tuna roll",
-            menuPrice: "$21.99",
+            menuName: "Watermelon Bai",
+            menuDescription: "",
+            menuPrice: "$3.00",
           },
           {
             id: 2,
-            menuName: "Sushi Combo C",
-            menuDescription:
-              "5 pieces of nigiri sushi (chef's choice) with either an American roll or a Hawaiian roll or a rainbow roll",
-            menuPrice: "$23.99",
+            menuName: "Cherry Bai",
+            menuDescription: "",
+            menuPrice: "$3.00",
           },
           {
             id: 3,
-            menuName: "Twol Roll Combo",
-            menuDescription: "King of king roll, and an Austin roll",
-            menuPrice: "$26.99",
+            menuName: "Dr. Pepper Bottle",
+            menuDescription: "",
+            menuPrice: "$2.50",
+          },
+          {
+            id: 4,
+            menuName: "Coke Bottle",
+            menuDescription: "",
+            menuPrice: "$2.50",
+          },
+          {
+            id: 5,
+            menuName: "Diet Coke Bottle",
+            menuDescription: "",
+            menuPrice: "$2.50",
+          },
+          {
+            id: 6,
+            menuName: "Oi Ocha Green tea bottle",
+            menuDescription: "",
+            menuPrice: "$3.00",
+          },
+          {
+            id: 7,
+            menuName: "Blackberry Izze",
+            menuDescription: "",
+            menuPrice: "$2.50",
+          },
+          {
+            id: 8,
+            menuName: "Green Apple Izze",
+            menuDescription: "",
+            menuPrice: "$2.50",
+          },
+          {
+            id: 9,
+            menuName: "Peach Izze",
+            menuDescription: "",
+            menuPrice: "$2.50",
+          },
+          {
+            id: 10,
+            menuName: "Clementine Izze",
+            menuDescription: "",
+            menuPrice: "$2.50",
+          },
+          {
+            id: 11,
+            menuName: "Jumex Can",
+            menuDescription: "",
+            menuPrice: "$2.50",
+          },
+          {
+            id: 12,
+            menuName: "Sweet PURE LEAF tea",
+            menuDescription: "",
+            menuPrice: "$3.00",
+          },
+          {
+            id: 13,
+            menuName: "Original Ramune Japanese Marble Soda",
+            menuDescription: "",
+            menuPrice: "$3.00",
+          },
+          {
+            id: 14,
+            menuName: "Strawberry Ramune Japanese Marble Soda",
+            menuDescription: "",
+            menuPrice: "$3.00",
+          },
+          {
+            id: 15,
+            menuName: "Melon Ramune Japanese Marble Soda",
+            menuDescription: "",
+            menuPrice: "$3.00",
+          },
+          {
+            id: 16,
+            menuName: "Red Bull",
+            menuDescription: "",
+            menuPrice: "$3.50",
+          },
+          {
+            id: 17,
+            menuName: "Topo Chico",
+            menuDescription: "",
+            menuPrice: "$2.50",
+          },
+          {
+            id: 18,
+            menuName: "Water Bottle",
+            menuDescription: "",
+            menuPrice: "$1.50",
           },
         ],
       },

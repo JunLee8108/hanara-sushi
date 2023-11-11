@@ -14,6 +14,8 @@ export default function Menu() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleChocie = (e: React.MouseEvent) => {
+    // window.scrollTo(0, 0);
+
     const target = (e.target as HTMLElement).innerHTML.replaceAll(" ", "");
 
     if (target.includes("SUSHI")) {
