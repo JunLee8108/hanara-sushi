@@ -114,6 +114,7 @@
   height: 100%;
   text-align: center;
   background-color: black;
+  border: 1px solid black;
   color: white;
   padding: 15px;
 }
