@@ -77,7 +77,6 @@
   padding: 15px;
   margin-right: 5px;
   cursor: pointer;
-
   transition: 0.3s all ease;
 }
 
@@ -164,11 +163,14 @@
   .footer-icon {
     width: 15px;
     height: 15px;
-    border-radius: 50%;
     padding: 10px;
-    margin-right: 5px;
-    cursor: pointer;
+    margin-right: 20px;
     background-color: black;
+    cursor: pointer;
+  }
+
+  .footer-icon-button {
+    margin-right: 15px;
   }
 
   .footer-submenu-container {
