@@ -1,7 +1,13 @@
 import "./NavbarMobileMenuModal.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPaperPlane,
+  faBookOpen,
+  faBowlFood,
+  faBurger,
+  faRoute,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function NavbarMobileMenuModal({
   handleNavigation,
@@ -57,7 +63,7 @@ export default function NavbarMobileMenuModal({
               }}
             >
               <FontAwesomeIcon
-                icon={faPaperPlane}
+                icon={faBookOpen}
                 style={{ marginRight: "10px" }}
                 size="sm"
               />
@@ -72,7 +78,7 @@ export default function NavbarMobileMenuModal({
               }
             >
               <FontAwesomeIcon
-                icon={faPaperPlane}
+                icon={faBowlFood}
                 style={{ marginRight: "10px" }}
                 size="sm"
               />
@@ -87,7 +93,7 @@ export default function NavbarMobileMenuModal({
               }
             >
               <FontAwesomeIcon
-                icon={faPaperPlane}
+                icon={faBurger}
                 style={{ marginRight: "10px" }}
                 size="sm"
               />
@@ -102,7 +108,7 @@ export default function NavbarMobileMenuModal({
               }
             >
               <FontAwesomeIcon
-                icon={faPaperPlane}
+                icon={faRoute}
                 style={{ marginRight: "10px" }}
                 size="sm"
               />
