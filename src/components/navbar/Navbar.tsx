@@ -28,7 +28,7 @@ export default function Navbar() {
     if (location.pathname.includes(link)) {
       navigate("refresh");
       setTimeout(() => {
-        navigate(link);
+        navigate(link, { replace: true });
       }, 100);
     }
   };

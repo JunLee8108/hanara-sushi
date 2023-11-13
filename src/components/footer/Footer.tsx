@@ -28,7 +28,7 @@ export default function Footer() {
     if (location.pathname.includes(link)) {
       navigate("refresh");
       setTimeout(() => {
-        navigate(link);
+        navigate(link, { replace: true });
       }, 100);
     }
   };
@@ -38,9 +38,9 @@ export default function Footer() {
       <div className="footer-container ">
         <div className="footer-content-container display-flex">
           <div className="footer-content-flexbox display-flex-center">
-            <h2 className="footer-content-name" onClick={() => navigate("/")}>
+            {/* <h2 className="footer-content-name" onClick={() => navigate("/")}>
               Hanara Sushi
-            </h2>
+            </h2> */}
             <img src={brand} alt="brand logo" className="footer-brand-img" />
           </div>
           <div className="footer-content-flexbox display-flex-center">
