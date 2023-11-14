@@ -154,8 +154,6 @@
 
   .footer-brand-img {
     width: 150px;
-
-    padding: 0;
   }
 
   .footer-content-flexbox:nth-child(1) {
@@ -165,18 +163,21 @@
 
   .footer-content-flexbox:nth-child(2) {
     align-items: flex-end;
+    justify-content: center;
     border-bottom: 1px dotted #e2e2e2;
     margin-bottom: 20px;
   }
 
   .footer-content-list-container {
     padding: 30px;
-    gap: 2rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   .footer-content-list {
     font-size: 12px;
+    min-width: 50px;
     text-align: center;
   }
 

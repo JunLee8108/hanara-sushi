@@ -6,7 +6,7 @@ const promotion = require("../../assets/promotion.webp");
 export default function HomePromotion() {
   return (
     <div className="home-promotion-container home-common-container mg-left-right-auto ">
-      <h1 className="home-title-border-left">Special Promotions</h1>
+      <h1 className="home-title-border-left">Special Promotion</h1>
 
       <div className="home-promotion-flex-container display-flex">
         <div className="home-promotion-imgbox display-flex">
@@ -15,7 +15,7 @@ export default function HomePromotion() {
 
         <div className="home-promotion-textbox display-flex">
           <h2 className="home-promotion-textbox-title">
-            1$ Salmon Sushi (1pc)
+            $1 Salmon Sushi (1pc)
           </h2>
           <p className="home-promotion-textbox-subtitle">
             Visit Hanara Sushi & Grills, enjoy our fresh & tasty Salmon just for
