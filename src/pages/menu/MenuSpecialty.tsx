@@ -2,6 +2,7 @@ import "./Menu.css";
 import "./MenuSpecialty.css";
 
 import { useState } from "react";
+import { Fragment } from "react";
 
 const bakedRoll = require("../../assets/Baked-Salmon-Roll.webp");
 const HallelujahRoll = require("../../assets/Hallelujah-Roll.webp");
@@ -73,27 +74,23 @@ export default function MenuSpecialty() {
 
         {specialtyData.map((text, index) => {
           return (
-            <h2
-              className={`menu-specialty-name ${
-                index === currentImage ? "active" : ""
-              }`}
-              key={index}
-            >
-              {text.name}
-            </h2>
-          );
-        })}
-
-        {specialtyData.map((text, index) => {
-          return (
-            <p
-              className={`menu-specialty-content ${
-                index === currentImage ? "active" : ""
-              }`}
-              key={index}
-            >
-              {text.content}
-            </p>
+            <Fragment key={index}>
+              <h2
+                className={`menu-specialty-name ${
+                  index === currentImage ? "active" : ""
+                }`}
+              >
+                {text.name}
+              </h2>
+              <p
+                className={`menu-specialty-content ${
+                  index === currentImage ? "active" : ""
+                }`}
+                key={index}
+              >
+                {text.content}
+              </p>
+            </Fragment>
           );
         })}
       </div>

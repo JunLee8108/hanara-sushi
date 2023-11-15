@@ -11,8 +11,9 @@
 }
 
 .home-title-border-left {
-  /* border-left: 4px solid #f57c00; */
-  border-left: 4px solid grey;
+  border-left: 4px solid #f57c00;
+  color: #3a3a3a;
+  /* border-left: 4px solid grey; */
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
