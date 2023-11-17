@@ -1,6 +1,8 @@
 import "./HomePromotion.css";
 import "./Home.css";
 
+import BeatLoader from "react-spinners/BeatLoader";
+
 const promotion = require("../../assets/promotion.webp");
 
 export default function HomePromotion() {
@@ -17,6 +19,13 @@ export default function HomePromotion() {
           <h2 className="home-promotion-textbox-title">
             $1 Salmon Sushi (1pc)
           </h2>
+
+          <BeatLoader
+            color="#ff6f61"
+            speedMultiplier={0.7}
+            className="home-promotion-pacman"
+          />
+
           <p className="home-promotion-textbox-subtitle">
             Visit Hanara Sushi & Grills, enjoy our fresh & tasty Salmon just for
             a DOLLAR!

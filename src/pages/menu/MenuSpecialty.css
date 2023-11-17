@@ -169,9 +169,9 @@
 
   .carousel-control-prev,
   .carousel-control-next {
-    top: 79%;
+    top: 80%;
     border-radius: unset;
-    padding: 13px 15px;
+    padding: 12px 13px;
     width: auto;
   }
 

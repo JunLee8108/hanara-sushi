@@ -2,6 +2,7 @@
   min-height: 500px;
   display: flex;
   gap: 0.1rem;
+  margin-bottom: 20px;
 }
 
 .home-intro-flexbox {
@@ -34,11 +35,14 @@
 
 .home-intro-flexbox:nth-child(2) img {
   width: 100%;
+  aspect-ratio: 1/1.2;
   border-radius: 5px;
+  transition: 0.3s all ease;
 }
 
 .home-intro-order-button {
-  background-color: #252525;
+  /* background-color: #252525; */
+  background-color: #f57c00;
   color: white;
   border: 0;
   border-radius: 5px;
@@ -50,6 +54,12 @@
 
 .home-intro-order-button:hover {
   opacity: 0.5;
+}
+
+@media (hover: hover) {
+  .home-intro-flexbox:nth-child(2) img:hover {
+    transform: scale(1.05);
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -77,4 +87,7 @@
 }
 
 @media screen and (max-width: 767px) {
+  .home-intro-flex-container {
+    margin-bottom: 10px;
+  }
 }

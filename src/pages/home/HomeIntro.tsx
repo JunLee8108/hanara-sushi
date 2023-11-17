@@ -3,7 +3,7 @@ import "./Home.css";
 
 import { useNavigate } from "react-router-dom";
 
-const logo = require("../../assets/bg.webp");
+const logo = require("../../assets/bg12.jpeg");
 
 export default function HomeIntro() {
   const navigate = useNavigate();
