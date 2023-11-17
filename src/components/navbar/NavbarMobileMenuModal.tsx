@@ -30,6 +30,12 @@ export default function NavbarMobileMenuModal({
             ? "navbar-mobile-modal-bg animated-bg"
             : "navbar-mobile-modal-bg animated-hide"
         }
+        onClick={(e) => {
+          const target = document.querySelector(".navbar-mobile-modal-bg");
+          if (e.target === target) {
+            setHandleMobileModal(false);
+          }
+        }}
       >
         <div
           className={
