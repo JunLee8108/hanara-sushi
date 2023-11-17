@@ -49,12 +49,18 @@
 }
 
 .menu-button:hover {
-  background-color: #e2e2e2;
+  /* background-color: #e2e2e2; */
+  background-color: #f57c00;
+  color: white;
+  font-weight: bold;
 }
 
 .menu-active-button {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-  background-color: #e2e2e2;
+  /* background-color: #e2e2e2; */
+  background-color: #f57c00;
+  color: white;
+  font-weight: bold;
 }
 
 .menu-section {
