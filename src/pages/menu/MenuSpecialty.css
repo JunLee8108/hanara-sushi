@@ -28,7 +28,7 @@
   position: relative;
 }
 
-.menu-specialty-center-img,
+/* .menu-specialty-center-img,
 .menu-specialty-left-right-img {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -40,7 +40,7 @@
   -moz-user-drag: none;
   -o-user-drag: none;
   user-drag: none;
-}
+} */
 
 .menu-specialty-center-img {
   width: 600px;

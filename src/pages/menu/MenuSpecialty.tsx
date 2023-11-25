@@ -58,6 +58,7 @@ export default function MenuSpecialty() {
 
   const handleTouchStart = (e: any) => {
     setTouchStart(e.targetTouches[0].clientX);
+    document.body.style.overflow = "hidden";
   };
 
   const handleTouchMove = (e: any) => {
@@ -78,6 +79,7 @@ export default function MenuSpecialty() {
     // Reset touch positions
     setTouchStart(null);
     setTouchEnd(null);
+    document.body.style.overflow = "unset";
   };
 
   return (
