@@ -1,9 +1,10 @@
+import React, { useState } from "react";
 import "./Menu.css";
 import "./MenuSpecialty.css";
 
-import { useState } from "react";
 import { Fragment } from "react";
 
+// Import your images
 const bakedRoll = require("../../assets/Baked-Salmon-Roll.webp");
 const HallelujahRoll = require("../../assets/Hallelujah-Roll.webp");
 const RainbowRoll = require("../../assets/Rainbow-Roll.webp");
@@ -25,7 +26,7 @@ export default function MenuSpecialty() {
       img: HallelujahRoll,
     },
     {
-      id: 1,
+      id: 2,
       name: "Rainbow Roll",
       content: "Spicy tuna, cucumber, avocado, and salmon on top",
       img: RainbowRoll,
@@ -44,56 +45,95 @@ export default function MenuSpecialty() {
     );
   };
 
+  const getPreviousImageIndex = () => {
+    return currentImage === 0 ? specialtyData.length - 1 : currentImage - 1;
+  };
+
+  const getNextImageIndex = () => {
+    return currentImage === specialtyData.length - 1 ? 0 : currentImage + 1;
+  };
+
   return (
     <div className="menu-specialty-container mg-left-right-auto">
-      <h1 className="menu-specialty-title menu-title-border-left mg-left-right-auto">
-        Our Specialty Rolls
-      </h1>
+      <h1 className="menu-specialty-title">Our Specialty Rolls</h1>
 
-      <div className="menu-specialty-img-container mg-left-right-auto">
-        {specialtyData.map((src, index) => {
-          return (
-            <img
-              key={index}
-              loading="lazy"
-              src={src.img}
-              alt="Specialty Roll"
-              className={`menu-specailty-img ${
+      <div className="menu-specialty-img-container">
+        <div className="menu-specialty-imgbox">
+          {specialtyData.map((content, index) => {
+            return (
+              <img
+                src={content.img}
+                className={`menu-specialty-left-right-img ${
+                  index === getPreviousImageIndex() ? "active-fade" : ""
+                } `}
+                onClick={goToPrevious}
+                key={index}
+                alt="specialty roll"
+              ></img>
+            );
+          })}
+        </div>
+
+        <div className="menu-specialty-imgbox">
+          {specialtyData.map((content, index) => {
+            return (
+              <img
+                src={content.img}
+                className={`menu-specialty-center-img ${
+                  index === currentImage ? "active" : ""
+                } `}
+                key={index}
+                alt="specialty roll"
+              ></img>
+            );
+          })}
+        </div>
+
+        <div className="menu-specialty-imgbox">
+          {specialtyData.map((content, index) => {
+            return (
+              <img
+                src={content.img}
+                className={`menu-specialty-left-right-img ${
+                  index === getNextImageIndex() ? "active-fade" : ""
+                }`}
+                onClick={goToNext}
+                key={index}
+                alt="specialty roll"
+              ></img>
+            );
+          })}
+        </div>
+      </div>
+
+      <button className="carousel-control-prev" onClick={goToPrevious}>
+        &lt;
+      </button>
+      <button className="carousel-control-next" onClick={goToNext}>
+        &gt;
+      </button>
+
+      {specialtyData.map((text, index) => {
+        return (
+          <Fragment key={index}>
+            <h2
+              className={`menu-specialty-name ${
                 index === currentImage ? "active" : ""
               }`}
-            />
-          );
-        })}
-
-        <button className="carousel-control-prev" onClick={goToPrevious}>
-          &lt;
-        </button>
-        <button className="carousel-control-next" onClick={goToNext}>
-          &gt;
-        </button>
-
-        {specialtyData.map((text, index) => {
-          return (
-            <Fragment key={index}>
-              <h2
-                className={`menu-specialty-name ${
-                  index === currentImage ? "active" : ""
-                }`}
-              >
-                {text.name}
-              </h2>
-              <p
-                className={`menu-specialty-content ${
-                  index === currentImage ? "active" : ""
-                }`}
-                key={index}
-              >
-                {text.content}
-              </p>
-            </Fragment>
-          );
-        })}
-      </div>
+            >
+              {text.name}
+            </h2>
+            <p
+              className={`menu-specialty-content ${
+                index === currentImage ? "active" : ""
+              }`}
+              key={index}
+            >
+              {text.content}
+            </p>
+          </Fragment>
+        );
+      })}
     </div>
   );
 }
