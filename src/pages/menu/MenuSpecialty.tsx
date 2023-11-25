@@ -63,10 +63,12 @@ export default function MenuSpecialty() {
 
   const handleTouchMove = (e: any) => {
     setTouchEnd(e.targetTouches[0].clientX);
+    document.body.style.overflow = "hidden";
   };
 
   const handleTouchEnd = () => {
     if (touchStart !== null && touchEnd !== null) {
+      document.body.style.overflow = "hidden";
       if (touchStart - touchEnd > 150) {
         // Left swipe
         goToNext();
@@ -79,7 +81,10 @@ export default function MenuSpecialty() {
     // Reset touch positions
     setTouchStart(null);
     setTouchEnd(null);
-    document.body.style.overflow = "unset";
+
+    const timer = setTimeout(() => {
+      document.body.style.overflow = "unset";
+    }, 500);
   };
 
   return (
