@@ -53,11 +53,43 @@ export default function MenuSpecialty() {
     return currentImage === specialtyData.length - 1 ? 0 : currentImage + 1;
   };
 
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+
+  const handleTouchStart = (e: any) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: any) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStart !== null && touchEnd !== null) {
+      if (touchStart - touchEnd > 150) {
+        // Left swipe
+        goToNext();
+      } else if (touchEnd - touchStart > 150) {
+        // Right swipe
+        goToPrevious();
+      }
+    }
+
+    // Reset touch positions
+    setTouchStart(null);
+    setTouchEnd(null);
+  };
+
   return (
     <div className="menu-specialty-container mg-left-right-auto">
       <h1 className="menu-specialty-title">Our Specialty Rolls</h1>
 
-      <div className="menu-specialty-img-container">
+      <div
+        className="menu-specialty-img-container"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         <div className="menu-specialty-imgbox">
           {specialtyData.map((content, index) => {
             return (
