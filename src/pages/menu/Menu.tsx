@@ -15,6 +15,11 @@ export default function Menu() {
   // const didMount = useRef(false);
 
   const handleChocie = (e: React.MouseEvent) => {
+    window.scrollTo({
+      top: 0,
+      // behavior: "smooth",
+    });
+
     const target = (e.target as HTMLElement).innerHTML.replaceAll(" ", "");
 
     if (target.includes("SUSHI")) {
@@ -90,6 +95,24 @@ export default function Menu() {
                           (menuNameContent, menuNameIndex) => {
                             return (
                               <li className="menu-item" key={menuNameIndex}>
+                                {/* {menuNameContent.img !== "" ? ( */}
+                                <div className="menu-img-container">
+                                  {menuNameContent.img !== "" ? (
+                                    <img
+                                      className="menu-img"
+                                      src={menuNameContent.img}
+                                      alt=""
+                                    />
+                                  ) : (
+                                    <img
+                                      className="menu-img"
+                                      src="./img/no-image2.webp"
+                                      alt=""
+                                    />
+                                  )}
+                                </div>
+                                {/* ) : null} */}
+
                                 <span className="menu-item-name">
                                   {menuNameContent.menuName}
                                 </span>
