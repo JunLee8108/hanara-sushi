@@ -68,6 +68,7 @@
 .menu-section {
   margin-bottom: 3rem;
   transition: 0.3s all ease;
+  /* background-color: red; */
 }
 
 .menu-subtitle {
@@ -222,6 +223,13 @@
 
   .menu-list {
     display: unset;
+  }
+
+  .menu-img-container {
+    /* background-color: red; */
+    width: 100%;
+    height: 240px;
+    border-radius: 5px;
   }
 
   .menu-button {
