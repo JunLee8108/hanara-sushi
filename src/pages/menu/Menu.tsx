@@ -39,24 +39,7 @@ export default function Menu() {
     );
 
     setMenuChoice(filteredData);
-
-    // const timer = setTimeout(() => {
-    //   filteredData = menuList.filter((data) =>
-    //     data.id.replaceAll(" ", "").includes(target)
-    //   );
-
-    //   setMenuChoice(filteredData);
-    // }, 500);
   };
-
-  // useEffect(() => {
-  //   if (didMount.current) {
-  //     window.scrollTo(0, 0);
-  //     console.log(1);
-  //   } else {
-  //     didMount.current = true;
-  //   }
-  // }, [activeIndex]);
 
   return (
     <div className="menu-container">
@@ -95,7 +78,6 @@ export default function Menu() {
                           (menuNameContent, menuNameIndex) => {
                             return (
                               <li className="menu-item" key={menuNameIndex}>
-                                {/* {menuNameContent.img !== "" ? ( */}
                                 <div className="menu-img-container">
                                   {menuNameContent.img !== "" ? (
                                     <img
@@ -106,12 +88,11 @@ export default function Menu() {
                                   ) : (
                                     <img
                                       className="menu-img"
-                                      src="./img/no-image2.webp"
+                                      src="./img/no-image.webp"
                                       alt=""
                                     />
                                   )}
                                 </div>
-                                {/* ) : null} */}
 
                                 <span className="menu-item-name">
                                   {menuNameContent.menuName}

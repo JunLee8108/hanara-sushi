@@ -1,7 +1,7 @@
 import Home from "./pages/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
-import ScrollToTop from "./components/common/ScrollToTop";
+
 import LoadingMinHeight100 from "./components/common/LoadingMinHeight100";
 import Empty from "./components/common/Empty";
 
@@ -21,7 +21,6 @@ function App() {
 
   return (
     <>
-      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
