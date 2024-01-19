@@ -4,7 +4,10 @@
 }
 
 .home-promotion-flex-container {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2); */
+  box-shadow: 0 4px 8px 0 rgba(255, 137, 0, 0.2);
+  border-radius: 10px;
 }
 
 .home-promotion-imgbox {
@@ -16,6 +19,7 @@
 .home-promotion-imgbox img {
   width: 100%;
   aspect-ratio: 1/1;
+  border-radius: 10px 0 0 10px;
 }
 
 .home-promotion-textbox {

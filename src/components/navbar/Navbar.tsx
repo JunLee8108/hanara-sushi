@@ -25,7 +25,8 @@ export default function Navbar() {
 
   const handleNavigation = (link: string) => {
     navigate(link);
-    if (location.pathname.includes(link)) {
+
+    if (location.pathname.includes(link) && link !== "/") {
       navigate("refresh");
       setTimeout(() => {
         navigate(link, { replace: true });

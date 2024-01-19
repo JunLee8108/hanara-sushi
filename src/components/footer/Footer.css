@@ -3,10 +3,11 @@
   background-color: #252525;
   min-height: 1rem;
   color: white;
-  margin-top: 90px;
+  margin-top: 70px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-top: 1px dotted snow;
 }
 
 .footer-content-container {
@@ -133,6 +134,7 @@
 @media screen and (max-width: 1280px) {
   .footer-container {
     margin-top: 50px;
+    border-top: unset;
   }
 
   .footer-content-container {

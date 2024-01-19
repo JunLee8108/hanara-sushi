@@ -4,8 +4,10 @@
 }
 
 .home-location-flex-container {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(255, 137, 0, 0.2);
+  /* box-shadow: 0 10px 20px rgba(255, 137, 0, 0.2); */
   flex-direction: column;
+  border-radius: 10px;
 }
 
 .home-location-hour-flex-container {
