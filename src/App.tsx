@@ -5,7 +5,7 @@ import ScrollToTop from "./components/common/ScrollToTop";
 import LoadingMinHeight100 from "./components/common/LoadingMinHeight100";
 import Empty from "./components/common/Empty";
 
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, useEffect } from "react";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -13,6 +13,12 @@ const Menu = lazy(() => import("./pages/menu/Menu"));
 const Contact = lazy(() => import("./pages/contact/Contact"));
 
 function App() {
+  useEffect(() => {
+    window.onbeforeunload = function pushRefresh() {
+      window.scrollTo(0, 0);
+    };
+  }, []);
+
   return (
     <>
       <ScrollToTop />
