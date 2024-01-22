@@ -94,7 +94,7 @@
   box-shadow: 0 8px 12px 0 rgba(255, 137, 0, 0.2);
   transition: all 0.3s ease;
   width: 100%;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
   text-align: center;
 }
