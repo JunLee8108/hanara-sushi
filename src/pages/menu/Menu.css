@@ -115,7 +115,8 @@
 .menu-item-name {
   font-weight: bold;
   transition: 0.3s all ease;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
+  line-height: 30px;
   width: 100%;
 }
 
