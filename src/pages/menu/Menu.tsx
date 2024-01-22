@@ -84,12 +84,14 @@ export default function Menu() {
                                       className="menu-img"
                                       src={menuNameContent.img}
                                       alt=""
+                                      loading="lazy"
                                     />
                                   ) : (
                                     <img
                                       className="menu-img"
                                       src="./img/no-image.webp"
                                       alt=""
+                                      loading="lazy"
                                     />
                                   )}
                                 </div>
