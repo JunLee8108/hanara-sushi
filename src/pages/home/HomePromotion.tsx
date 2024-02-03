@@ -41,7 +41,7 @@ export default function HomePromotion() {
             Hanara Sushi & Grill
           </p>
           <p className="home-promotion-textbox-location">
-            10000 Research Blvd #139 Austin, Tx, 78759
+            10000 Research Blvd #139 Austin, TX, 78759
           </p>
           <p className="home-promotion-textbox-location">(512)-520-5001</p>
         </div>
